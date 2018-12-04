@@ -8,7 +8,7 @@ Currently, Microsoft offers 10 free parallel jobs with unlimited build minutes f
 To get started go to [https://dev.azure.com/](https://dev.azure.com/) and click _Start Free_ or login with your existing Microsoft account.
 After a successful login, follow the online instructions to create a new project.
 
-![Create Azure Pipelines project](https://www.dropbox.com/s/h8xz15m8w9lnvdt/Screenshot%202018-11-29%2010.58.43.png?dl=1)
+![](https://www.dropbox.com/s/h8xz15m8w9lnvdt/Screenshot%202018-11-29%2010.58.43.png)
 
 Click on _New Pipeline_ button.
 
