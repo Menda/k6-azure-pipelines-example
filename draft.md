@@ -224,9 +224,12 @@ Once you enter the options for your project switch to _Variables_ tab within the
 Click _Add_ to add a new variable.
 Under name enter `k6cloud.token` and for its value paste Load Impact's token.
 Don't forget to set the variable as secret so that it's not visible as plain text in your pipelines output.
+
+![](media/12a.png)
+
 After entering the values click _Save & queue_ button above and into field _Save comment_ enter something like "adding k6cloud.token env var".
 
-![](media/12.png)
+![](media/12b.png)
 
 Now, you can push your new `loadtests/cloud.js` script alongside new Pipelines script task to trigger a new build.
 You can see k6 output in Azure Pipelines web UI, but for a more in-depth view and analysis of your test go to [Load Impact's web UI](https://app.loadimpact.com).
