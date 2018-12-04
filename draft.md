@@ -8,20 +8,20 @@ Currently, Microsoft offers 10 free parallel jobs with unlimited build minutes f
 To get started go to [https://dev.azure.com/](https://dev.azure.com/) and click _Start Free_ or login with your existing Microsoft account.
 After a successful login, follow the online instructions to create a new project.
 
-![](https://www.dropbox.com/s/h8xz15m8w9lnvdt/Screenshot%202018-11-29%2010.58.43.png)
+![](media/01.png)
 
 Click on _New Pipeline_ button.
 
-![](https://www.dropbox.com/s/ronbv2otda5z8vg/Screenshot%202018-11-29%2010.59.58.png?dl=1)
+![](media/02.png)
 
 Of course, our code needs to live somewhere. Generally, when I learn new things through a project I have a philosophy not to take on 5 new things, but one at a time. It makes it easier to focus on the new and when something isn't working as expected it is way easier to find the root of the problem. Because of that, for this project, I'm choosing to host my code on good old trustworthy GitHub.
 
-![](https://www.dropbox.com/s/rzvrq4uolbkhxwh/Screenshot%202018-11-29%2011.00.56.png?dl=1)
+![](media/03.png)
 
 For it, you need to have a project on GitHub. You can create a new project for this, or use an existing one.
 Click the _Authorize_ button to connect your repo to Azure Pipelines.
 
-![](https://www.dropbox.com/s/jprli8wcv007xqz/Screenshot%202018-11-29%2011.01.53.png?dl=1)
+![](media/04.png)
 
 If you are a member of multiple organizations select the organization that houses your project.
 
