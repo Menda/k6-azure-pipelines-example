@@ -25,11 +25,11 @@ Click the _Authorize_ button to connect your repo to Azure Pipelines.
 
 If you are a member of multiple organizations select the organization that houses your project.
 
-![](https://www.dropbox.com/s/x0q19y121gj2vtg/Screenshot%202018-11-29%2011.02.43.blur.png?dl=1)
+![](media/05.png)
 
 Choose to install Azure Pipelines into all repositories or just into a single repo.
 
-![](https://www.dropbox.com/s/qpga0a4qvhgw3u7/Screenshot%202018-11-29%2011.03.42.png?dl=1)
+![](media/06.png)
 
 Follow the next few steps to finish giving Azure Pipelines access to your project.
 After all these initial steps, the fun part can finally begin.
@@ -82,7 +82,7 @@ steps:
 
 Commit and push the code. Go to Pipeline's web UI and check out steps outputs. Now we are getting somewhere!
 
-![](https://www.dropbox.com/s/k1tp0il1pvx6rti/Screenshot%202018-12-04%2009.29.32.png?dl=1)
+![](media/07.png)
 
 ## k6 run
 
@@ -140,7 +140,7 @@ steps:
 
 Once again: commit and push.
 
-![](https://www.dropbox.com/s/y2ccavc97ca4kyl/Screenshot%202018-12-04%2009.32.39.png?dl=1)
+![](media/08.png)
 
 If you got this screen, congrats! You now know how to set up a GitHub project CI build to run on Azure Pipelines and do some sweat load testing.
 
@@ -209,29 +209,29 @@ In order to get the token, log in into your account on [loadimpact.com](https://
 
 Go over to [_Integrations_ section]((https://app.loadimpact.com/integrations)) of the page and click [_Use your token_](https://app.loadimpact.com/account/token) link. Copy the provided token.
 
-![](https://www.dropbox.com/s/pgaqmh4g6be0fzb/Screenshot%202018-11-30%2012.png?dl=1)
+![](media/09.png)
 
 Now we need to add an Azure Pipelines variable that will be available within the build.
 
 Go to Azure Pipelines web UI and from the left side menu select _Pipelines_ and then click the _Edit_ button next to the name of your project.
 
-![](https://www.dropbox.com/s/zfgypz05izp7qgh/Screenshot%202018-11-29%2011.44.02_annotated.png?dl=1)
+![](media/10.png)
 
 Once you enter the options for your project switch to _Variables_ tab within the web UI and enter a new secret variable that will be used during k6 cloud execution.
 
-![](https://www.dropbox.com/s/r91alaprypqmvq4/Screenshot%202018-11-29%2011.50.12.png?dl=1)
+![](media/11.png)
 
 Click _Add_ to add a new variable.
 Under name enter `k6cloud.token` and for its value paste Load Impact's token.
 Don't forget to set the variable as secret so that it's not visible as plain text in your pipelines output.
 After entering the values click _Save & queue_ button above and into field _Save comment_ enter something like "adding k6cloud.token env var".
 
-![](https://www.dropbox.com/s/2ktfhjxdvp0nppb/Screenshot%202018-11-29%2012.58.37.png?dl=1)
+![](media/12.png)
 
 Now, you can push your new `loadtests/cloud.js` script alongside new Pipelines script task to trigger a new build.
 You can see k6 output in Azure Pipelines web UI, but for a more in-depth view and analysis of your test go to [Load Impact's web UI](https://app.loadimpact.com).
 
-![](https://www.dropbox.com/s/ne1kctle8b718na/Screenshot%202018-12-04%2009.41.23.png?dl=1)
+![](media/13.png)
 
 ## Wrap up
 
