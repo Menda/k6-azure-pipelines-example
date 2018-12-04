@@ -58,7 +58,7 @@ We are going to create our first script task within our pipeline step. On it's G
 
 To make sure that k6 is installed properly we can add a new script task that just outputs version of our k6 install. This task is optional and can be removed in real-life scenarios.
 
-In the example in this article, I'm using a single-job build so I'm omitting "jobs" section.
+In the example in this article, I'm using a single-job build so I'm omitting `jobs` section.
 
 For now, we have the following:
 
