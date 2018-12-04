@@ -39,7 +39,7 @@ You can choose to use a starter template or as a true hacker head straight to yo
 
 Create a new file in the root of your repo named `azure-pipelines.yml`.
 
-Azure provides us with ready-made pools to run our pipeline agents in. Having a choice between a Windows, MacOS and Ubuntu pool I've selected "Ubuntu 16.04". That gives us the easiest way to install k6 tool through shell commands.
+Azure provides us with ready-made pools to run our pipeline agents in. Having a choice between a Windows, MacOS and Ubuntu agent I've selected `Ubuntu 16.04`. That gives us the easiest way to install k6 tool through shell commands.
 
 We can start our example by defining the base image for our agent:
 
