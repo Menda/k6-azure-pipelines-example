@@ -227,7 +227,7 @@ Don't forget to set the variable as secret so that it's not visible as plain tex
 
 ![](media/12a.png)
 
-After entering the values click _Save & queue_ button above and into field _Save comment_ enter something like "adding k6cloud.token env var".
+After entering the values click _Save & queue_ button above and into field _Save comment_ enter something like `adding k6cloud.token env var`.
 
 ![](media/12b.png)
 
